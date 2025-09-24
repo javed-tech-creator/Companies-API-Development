@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 
 // middleware 
 server.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+server.use(express.urlencoded({ extended: true }));
 server.use(cors());
 
 // database connection 

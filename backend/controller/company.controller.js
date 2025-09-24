@@ -18,7 +18,7 @@ export const createCompany = async (req, res, next) => {
   }
 };
 
-//  Get All Companies (with filters, search, pagination)
+//  Get All Companies (with filters, isActive, industry, location, minEmployees, maxEmployees, pagination)
 export const getCompanies = async (req, res, next) => {
   try {
     let { isActive, industry, location, minEmployees, maxEmployees } =
